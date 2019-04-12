@@ -1,4 +1,4 @@
 module.exports = {
-    userInfo: 'SELECT * FROM useInfo',
+    queryAll: 'SELECT * FROM ??',
     auditData: 'SELECT * FROM tea_house_audit'
 };

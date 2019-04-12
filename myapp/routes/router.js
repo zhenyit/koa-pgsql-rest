@@ -1,10 +1,11 @@
 let express = require('express');
 
 let api = require('../api/index');
-let userInfo = require('../api/userInfo')
+let management = require('../api/management')
 
 let router = express.Router();
 
-router.get(api.testData, userInfo.getUserInfo);
+router.get(api.getAuditList, management.getAuditList);
+router.get(api.getAuditDetail, management.getAuditDetail);
 
 module.exports = router;
