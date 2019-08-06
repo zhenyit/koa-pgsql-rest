@@ -1,1 +1,1 @@
-# my-first-nodejs
+# koa-pgsql-rest

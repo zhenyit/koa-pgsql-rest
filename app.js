@@ -1,30 +1,10 @@
-var express = require('express');
-var mysql = require('mysql');
+const Koa = require('koa');
+const app = new Koa();
+var router = require('./routes');
+const cors = require('@koa/cors');
 
-let router = require('./routes/router');
-let db = require('./configs/db');
-let sql = require('./sql/sqlMap');
+app.use(cors());
+app.use(router.routes());
+app.use(router.allowedMethods());
 
-var app = express();
-
-app.use(router);
-
-var server = app.listen(3000)
-
-// var connection = mysql.createConnection(db);
-
-// let sql_name = sql.userInfo;
-
-// connection.connect();
-// var temp = {}
-
-// connection.query(sql_name, function (error, results) {
-//     if (error) throw error;
-//     temp = results;
-//     // console.log('The solution is: ', results);
-// });
-
-
-
-
-
+app.listen(3000);
