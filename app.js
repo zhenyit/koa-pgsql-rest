@@ -1,5 +1,5 @@
 const Koa = require('koa');
-const app = new Koa();
+const app = module.exports = new Koa();
 var router = require('./routes');
 const cors = require('@koa/cors');
 

@@ -11,6 +11,7 @@ var Table = require('../controllers/table.js')
 var Neuralnetwork = require('../controllers/neuralnetwork.js')
 
 router.get('/initMapData', Wells.initMapData)
+router.get('/test', Wells.test)
 router.get('/searchByUWI', Search.searchByUWI)
 router.get('/searchByUWIField', Search.searchByUWIField)
 router.get('/searchByStatus', Search.searchByStatus)
@@ -24,6 +25,7 @@ router.get('/runANN', Neuralnetwork.runANN)
 router.get('/runLSTM', Neuralnetwork.runLSTM)
 router.get('/getInputData', Neuralnetwork.getInputData)
 router.get('/getWORData', Neuralnetwork.getWORData)
+
 
 module.exports = router
 

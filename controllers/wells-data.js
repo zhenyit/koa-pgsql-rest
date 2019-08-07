@@ -33,5 +33,8 @@ module.exports = {
     }
     data.path = _.chunk(data.path, 2)
     ctx.response.body = data
+  },
+  test(ctx) {
+    ctx.response.body = 'hello'
   }
 }

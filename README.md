@@ -1,4 +1,5 @@
 # koa-pgsql-rest
+![](https://img.shields.io/travis/zhenyit/koa-pgsql-rest) 
 ![](https://img.shields.io/github/license/zhenyit/koa-pgsql-rest) 
 
 A koajs back-end server providing RESTful Web Services with postgrSQL.
